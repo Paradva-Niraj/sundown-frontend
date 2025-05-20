@@ -4,7 +4,7 @@ function Header() {
     return (
         <>
             <div className="header-main">
-                <img src="./studio.svg" alt="" srcset="" />
+                <img src="./studio.svg" alt="" srcset=""/>
                 <div className='header-links'>
                     <h3> <a href="http://" target="_blank" rel="noopener noreferrer"> Work </a></h3>
                     <h3> <a href="http://" target="_blank" rel="noopener noreferrer"> Studio </a> </h3>

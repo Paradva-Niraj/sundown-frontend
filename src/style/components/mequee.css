@@ -1,0 +1,42 @@
+.mequee{
+    height: 20vh;
+    width: 100%;
+    /* background-color: aqua; */
+    white-space: nowrap;
+    padding-top: 8vw;
+    overflow: hidden;
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    align-items: center;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.mequee h1{
+    font-size: 7vw;
+    display: inline-block;
+    /* background-color: #0bfafe; */
+}
+
+#circle{
+    height: 5vw;
+    width: 5vw;
+    background-color: #fe330b;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0vw 2vw;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

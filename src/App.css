@@ -2,21 +2,10 @@
     background-color: #EFEAE3;
     font-family: Arial Black;
 }
-::-webkit-scrollbar {
-  width: 6px;              /* Thin scrollbar */
-}
+/* FirstPage.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 
-::-webkit-scrollbar-track {
-  background: #f0ebe3;     /* Light background (adjust to match your page) */
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #cfc8bd;  /* Light gray thumb */
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #b0a89e;  /* Darker on hover */
 }
