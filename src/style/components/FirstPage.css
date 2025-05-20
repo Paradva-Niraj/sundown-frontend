@@ -1,0 +1,40 @@
+
+.home-page{
+    /* background-color: orange; */
+    height: 83vh;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content:space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.653);
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.left{
+    width: 30vw;
+    background-color: transparent;
+    font-size: 1.6rem;
+    padding: 0 0 5vw 1vw;
+}
+
+.right{
+    width: 46vw;
+    background-color: transparent;
+    font-size: 10vw;
+    line-height: 16vh;
+    text-align: end;
+    padding: 0 0 5vw 1vw;
+}
+
+.home-video{
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+.home-video video{
+    height: auto;
+    width: 96vw;
+    border-radius: 30px;
+}
