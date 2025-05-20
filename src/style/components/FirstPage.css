@@ -184,3 +184,21 @@
         transform: translate(10%,-10%)skew(15deg);
     }
 }
+
+.home-display{
+    background-color: black;
+    height: 100vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 50px;
+    margin-top: 5vh;
+    padding: 2rem;
+}
+
+.tabs-links div {
+    font-size: 2rem;
+    padding: 1rem;
+    border-left: 2px solid rgb(205, 205, 205);
+    background-color: black;
+    color:white
+}

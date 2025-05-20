@@ -1,8 +1,34 @@
+import { useState } from 'react';
 import '../style/components/FirstPage.css'
 import Mequee from './Mequee.jsx'
 import Panel from './Panel.jsx';
+const tabs = ['Design', 'Project', 'Execution'];
 
+const tabData = {
+    Design: {
+        image: '/images/design.jpg', // replace with your image path
+        text: 'Our team works with clients to refine an idea...',
+        bgColor: '#000000',
+        align: 'center',
+    },
+    Project: {
+        image: '/images/project.jpg',
+        text: 'We create a final design that encompasses...',
+        bgColor: '#111111',
+        align: 'left',
+    },
+    Execution: {
+        image: '/images/execution.jpg',
+        text: 'Providing end-to-end design solutions...',
+        bgColor: '#222222',
+        align: 'right',
+    }
+};
 function FirstPage() {
+    const [activeTab, setActiveTab] = useState('Design');
+
+    const { image, text, bgColor, align } = tabData[activeTab];
+
     return (
         <>
             <div className='home-page'>
@@ -37,6 +63,20 @@ function FirstPage() {
                 <div className='hero-shape5' data-scroll></div>
             </div>
             <Panel />
+            <div className="header-main">
+                <div className='header-links'>
+                    <h3> <a href="https://github.com/Paradva-Niraj" target="_blank" rel="noopener noreferrer"> All Projects - </a></h3>
+                </div>
+            </div>
+            <div className='home-display'>
+                <div className='tabs-links'>
+                    {
+                        tabs.map((tab,index)=>(
+                            <div key={index}>{tab}</div>
+                        ))
+                    }
+                </div>
+            </div>
         </>
     );
 }

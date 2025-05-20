@@ -15,10 +15,15 @@
 
 .elem h2{
     background-color: transparent;   
-    font-size: 5em;
+    font-size: 4em;
     position: relative;
     z-index: 9;
     padding-left: 2vw;
+}
+
+.elem div , h3{
+    z-index: 9;
+    background-color: transparent;
 }
 
 .elem .overlay{
@@ -28,9 +33,20 @@
     z-index: 2;
     position: absolute;
     top:-100%;
-    transition: all ease 0.4s;
+    transition: all ease 0.2s;
 }
 
 .elem:hover .overlay{
     top:0;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2vw;
+}
+
+.data h3:last-child{
+    color: gray;
 }
