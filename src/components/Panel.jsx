@@ -40,7 +40,7 @@ function Panel() {
         }
     ]
     )
-    console.log(data);
+    // console.log(data);
 
     return (
         // <div className='links'>

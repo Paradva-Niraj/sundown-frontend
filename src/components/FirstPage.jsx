@@ -6,20 +6,20 @@ const tabs = ['Design', 'Project', 'Execution'];
 
 const tabData = {
     Design: {
-        image: '/images/design.jpg', // replace with your image path
-        text: 'Our team works with clients to refine an idea...',
+        image: './page4-1.webp',
+        text: 'Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.',
         bgColor: '#000000',
         align: 'center',
     },
     Project: {
-        image: '/images/project.jpg',
-        text: 'We create a final design that encompasses...',
+        image: './page4-2.webp',
+        text: 'Once we have a design, our production team takes the lead in bringing it to life. We manage all stages of the project, from build specifications and technical drawings to site surveys, vendor management, and 2D & 3D production. We have an extensive network of partners to meet each unique design and project need.',
         bgColor: '#111111',
         align: 'left',
     },
     Execution: {
-        image: '/images/execution.jpg',
-        text: 'Providing end-to-end design solutions...',
+        image: './page4-3.webp',
+        text: 'We ere with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience.',
         bgColor: '#222222',
         align: 'right',
     }
@@ -28,6 +28,12 @@ function FirstPage() {
     const [activeTab, setActiveTab] = useState('Design');
 
     const { image, text, bgColor, align } = tabData[activeTab];
+
+    const handleTabChange = (tab) => {
+        setActiveTab(tab);
+        console.log(tab);
+        
+    }
 
     return (
         <>
@@ -69,13 +75,13 @@ function FirstPage() {
                 </div>
             </div>
             <div className='home-display'>
-                <div className='tabs-links'>
-                    {
-                        tabs.map((tab,index)=>(
-                            <div key={index}>{tab}</div>
-                        ))
-                    }
-                </div>
+                    <div className='tabs-links'>
+                        {
+                            tabs.map((tab,index)=>(
+                                <div className={activeTab==tab?'activediv':'nonactivediv'} key={index} onClick={() => handleTabChange(tab)}>{tab}</div>
+                            ))
+                        }
+                    </div>
             </div>
         </>
     );

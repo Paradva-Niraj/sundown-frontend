@@ -195,10 +195,25 @@
     padding: 2rem;
 }
 
-.tabs-links div {
-    font-size: 2rem;
-    padding: 1rem;
-    border-left: 2px solid rgb(205, 205, 205);
+.tabs-links{
     background-color: black;
-    color:white
+}
+
+.tabs-links div {
+    font-size: 3rem;
+    padding: 1vw;
+    border: none;
+    background-color: transparent;
+}
+
+.activediv{
+    color:white;
+    align-items: left;
+    border-left:4px solid rgba(255, 217, 0, 0.833) ;
+}
+
+.nonactivediv{
+    border-left: 2px solid rgb(205, 205, 205);
+    color: rgba(110, 110, 110, 0.818);
+    align-items: right;
 }
