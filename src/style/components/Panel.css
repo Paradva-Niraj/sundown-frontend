@@ -6,7 +6,6 @@
 .elem{
     height: 13vh;
     width: 100%;
-    /* background-color: orange; */
     position: relative;
     border-bottom:1px solid black;
     border-top: 1px solid black;
@@ -49,4 +48,84 @@
 
 .data h3:last-child{
     color: gray;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 1024px) {
+    .elem {
+        height: 12vh;
+    }
+    
+    .elem h2 {
+        font-size: 3em;
+        padding-left: 3vw;
+    }
+    
+    .data {
+        padding-right: 3vw;
+    }
+    
+    .data h3 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .links {
+        height: auto;
+    }
+    
+    .elem {
+        height: 10vh;
+        min-height: 80px;
+    }
+    
+    .elem h2 {
+        font-size: 2.2em;
+        padding-left: 4vw;
+    }
+    
+    .data {
+        padding-right: 4vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5vh;
+    }
+    
+    .data > div {
+        display: flex;
+        gap: 2vw;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .data h3 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .elem {
+        height: 9vh;
+        min-height: 70px;
+    }
+    
+    .elem h2 {
+        font-size: 1.8em;
+        padding-left: 6vw;
+    }
+    
+    .data {
+        padding-right: 6vw;
+    }
+    
+    .data h3 {
+        font-size: 0.7rem;
+    }
+    
+    .data > div {
+        gap: 4vw;
+    }
 }

@@ -1,10 +1,10 @@
 .mequee{
     height: 20vh;
     width: 100%;
-    /* background-color: aqua; */
     white-space: nowrap;
     padding-top: 8vw;
     overflow: hidden;
+    z-index: 10;
 }
 
 .con{
@@ -20,7 +20,6 @@
 .mequee h1{
     font-size: 7vw;
     display: inline-block;
-    /* background-color: #0bfafe; */
 }
 
 #circle{
@@ -38,5 +37,63 @@
     }
     to{
         transform: translateX(-100%);
+    }
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 1024px) {
+    .mequee {
+        height: 18vh;
+        padding-top: 6vw;
+    }
+    
+    .mequee h1 {
+        font-size: 8vw;
+    }
+    
+    #circle {
+        height: 6vw;
+        width: 6vw;
+        margin: 0vw 3vw;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .mequee {
+        height: 15vh;
+        padding-top: 8vw;
+    }
+    
+    .mequee h1 {
+        font-size: 12vw;
+    }
+    
+    #circle {
+        height: 8vw;
+        width: 8vw;
+        margin: 0vw 4vw;
+    }
+    
+    .con {
+        animation-duration: 12s;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .mequee {
+        height: 12vh;
+        padding-top: 10vw;
+    }
+    
+    .mequee h1 {
+        font-size: 14vw;
+    }
+    
+    #circle {
+        height: 10vw;
+        width: 10vw;
+        margin: 0vw 5vw;
     }
 }
