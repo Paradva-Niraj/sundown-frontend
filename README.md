@@ -29,3 +29,7 @@ Integrate Swiper.js for modern, swipe-enabled sliders.
 Practice responsive design principles using media queries.
 
 Improve structure and performance of frontend applications using Vite.
+
+![Screenshot 1](demo\444f871d-d3ff-45a0-b258-470b39580892.png)
+
+![Screenshot 1](demo\ec22b66d-cd95-4124-8b65-93e1d87e57d4.png)
